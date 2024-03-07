@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="src/img/Watercolor Food Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script type="module" src="src/JS/Controller.js"></script>
+
+
+  <title>RecipeApp &mdash; Find yours</title>
+</head>
+
+<body class="body">
+  <header class="header">
+
+    <div class="header-container">
+      <a href="#">
+        <img class="logo" src="src/img/Watercolor Food Logo.png" alt="recipe app logo">
+      </a>
+
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <form class="header-form">
+            <input class="input-field" type="text" placeholder="Search for your recipe ......">
+            <button class="btn btn_homepage">
+              <i class="homepage-icons bi bi-search"></i>
+              <span class="nav-text">Search</span>
+            </button>
+          </form>
+
+          <li class="nav-list">
+            <button class="btn-add-recipe btn btn_homepage">
+              <i class="homepage-icons bi bi-plus-square"></i>
+              <span class="nav-text">Add Recipe</span>
+            </button>
+          </li>
+
+          <li class="nav-list">
+            <button class="btn btn-bookmark btn_homepage">
+              <i class="homepage-icons bi bi-bookmark"></i>
+              <span class="nav-text">BookMark</span>
+            </button>
+            <div class="bookmark hidden">
+
+              <ul class="bookmark_list">
+
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <h3 class="mobile-search">Search</h3>
+        <i class="icon-mobile-nav bi bi-list"></i>
+        <i class="icon-mobile-nav-close bi bi-x-lg"></i>
+      </button>
+    </div>
+
+
+  </header>
+
+  <div class="main">
+    <div class="section-hero">
+      <div class="hero-text-box">
+        <h1 class="hero-text">Search for your faviourite recipes</h1>
+        <ul class="homepage_list">
+          <li class="homepage_list_items">
+            <i class="homepage_check bi bi-check2"></i>
+            <h3 class="homepage_text">BookMark your recipes</h3>
+          </li>
+          <li class="homepage_list_items">
+            <i class="homepage_check bi bi-check2"></i>
+            <h3 class="homepage_text">Add your own recipes</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="hero">
+        <img class="cover_pic" src="src/img/front-view-tasty-meat-burger-with-cheese-salad-dark-background.jpg"
+          alt="cover photo">
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay hidden"></div>
+
+  <div class="window-add-recipe hidden">
+    <button class="close-btn">
+      <i class="close-icon bi bi-x-lg"></i>
+    </button>
+    <form class="upload grid--2-cols-form">
+      <div class="upload-recipe grid--2-cols-upload">
+        <h3 class="upload-heading">RECIPE</h3>
+        <label class="label">Title</label>
+        <input class="input" type="text" required name="title" value="">
+        <label class="label">URL</label>
+        <input class="input" type="text" required name="sourceUrl" value="">
+        <label class="label">Image Url</label>
+        <input class="input" type="text" required name="image" value="">
+        <label class="label">Publisher</label>
+        <input class="input" type="text" required name="publisher" value="">
+        <label class="label">Prep time</label>
+        <input class="input" type="number" required name="cookingTime" value="">
+        <label class="label">Servings</label>
+        <input class="input" type="number" required name="servings" value="">
+      </div>
+      <div class="upload-recipe grid--2-cols-upload">
+        <h3 class="upload-heading">INGREDIENTS</h3>
+        <label class="label">Ingredient 1</label>
+        <input class="input" type="text" required name="ingredient-1" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+        <label class="label">Ingredient 2</label>
+        <input class="input" type="text" required name="ingredient-2" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+        <label class="label">Ingredient 3</label>
+        <input class="input" type="text" required name="ingredient-3" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+        <label class="label">Ingredient 4</label>
+        <input class="input" type="text" required name="ingredient-4" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+        <label class="label">Ingredient 5</label>
+        <input class="input" type="text" required name="ingredient-5" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+        <label class="label">Ingredient 6</label>
+        <input class="input" type="text" required name="ingredient-6" value=""
+          placeholder="Format:'Quantity,Unit,Description'">
+      </div>
+      <button class="upload upload-btn">Upload recipe</button>
+    </form>
+
+  </div>
+
+</body>
+
+</html>

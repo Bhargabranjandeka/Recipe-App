@@ -1,0 +1,31 @@
+{
+  "name": "recipeapp",
+  "version": "1.0.0",
+  "description": "Recipe Application",
+  "default": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Bhargab Ranjan Deka",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "fraction": "^0.2.0",
+    "fractional": "^1.0.0",
+    "fracty": "^1.0.11",
+    "parcel": "^2.11.0",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  }
+}
